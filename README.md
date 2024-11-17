@@ -1,13 +1,13 @@
 **Order of Tasks Completed!**
-- Create a virtual environment and install the requirements - "requirements\requirements.txt"
-- Create data models - example with sqlalchemy in "app\models.py"
-- Generate migration script and run migration to create database tables - alembic files provided
+- Created a virtual environment and installed the requirement using pip install on given requirements.txt
+- Created required data models with normalized schema to avoid any data redundancy in models.py
+- Generated migration script using alembic and made manual updates to address errors with index creation
   - To create a migration file: "alembic revision --autogenerate -m initial update"
   - To update database with migration file: "alembic upgrade head"
-- Create an endpoint that returns business and symptom data
+- Created an endpoint that returns business and symptom data
   - Endpoint should take two optional parameters - business_id & diagnostic
   - Endpoint should return Business ID, Business Name, Symptom Code, Symptom Name, and Symptom Diagnostic values based on filter
-- Create an endpoint for importing a CSV file into the database
+- Created an endpoint for importing a CSV file into the database
   - The only requirement is the endpoint requires a CSV file. If needed, other parameters can be used.
 
 # AdviNow Interview Challenge
