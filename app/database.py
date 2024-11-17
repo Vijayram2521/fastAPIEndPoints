@@ -1,3 +1,12 @@
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
+from sqlalchemy.orm import DeclarativeBase
 
-Base = declarative_base()
+from settings import DB_URL
+
+engine = create_async_engine(DB_URL, echo=True)
+
+SessionLocal = async_sessionmaker(bind=engine, expire_on_commit=False)
+
+
+class Base(DeclarativeBase):
+    pass

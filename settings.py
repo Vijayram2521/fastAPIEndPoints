@@ -17,4 +17,4 @@ DB_NAME="postgres"
 DB_USER="myuser"
 DB_PASSWORD="mypassword"
 
-DB_URL: str = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
+DB_URL: str = f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"

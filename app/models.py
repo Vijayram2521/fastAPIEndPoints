@@ -26,7 +26,7 @@ class Symptom(Base):
 
 # Diagnostic Model (Linking Business and Symptom)
 class Diagnostic(Base):
-    __tablename__ = 'diagnostics'
+    __tablename__ = 'diagnostic'
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     
