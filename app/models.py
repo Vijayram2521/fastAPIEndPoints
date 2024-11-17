@@ -28,7 +28,7 @@ class Symptom(Base):
 class Diagnostic(Base):
     __tablename__ = 'diagnostics'
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     
     # Foreign key to Business
     business_id = Column(Integer, ForeignKey('business.business_id'))
